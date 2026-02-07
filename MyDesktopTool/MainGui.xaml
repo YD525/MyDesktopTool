@@ -1,0 +1,166 @@
+﻿<Window x:Class="MyDesktopTool.MainGui"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyDesktopTool"
+        mc:Ignorable="d"
+        Title="MainWindow" Topmost="True" Height="80" Width="800"  Style="{DynamicResource DefWin}" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" ResizeMode="NoResize">
+    <Border  MouseLeftButtonDown="WinHead_MouseLeftButtonDown"  Style="{DynamicResource DefWinBackground}" Name="MainBackGround" Height="80" Background="#FF0381C8">
+        <Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80">
+                    </ColumnDefinition>
+                    <ColumnDefinition Width="80">
+                    </ColumnDefinition>
+                    <ColumnDefinition Width="80">
+                    </ColumnDefinition>
+                    <ColumnDefinition Width="80">
+                    </ColumnDefinition>
+                    <ColumnDefinition Width="80">
+                    </ColumnDefinition>
+                    <ColumnDefinition Width="1*">
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid  Grid.Column="0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="0.7*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Foreground="White" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="11">
+                            工作时间
+                        </Label>
+                        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 -25 0 0">
+                            <Image Source="\Material\WorkingICO.png" Height="30" Width="30" Stretch="Fill" RenderOptions.BitmapScalingMode ="HighQuality">
+                            </Image>
+                        </StackPanel>
+                        <Label Foreground="White" Grid.Row="2" FontSize="11" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 0 0 0" Name="CountUP">
+                            00:00:00
+                        </Label>
+                        <Grid Width="5" Height="30" Background="#FF9B2C2C" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="0" Grid.RowSpan="2" Panel.ZIndex="999" Name="WorkBar">
+                        </Grid>
+                    </Grid>
+                </Grid>
+
+                <Grid Background="#FF25A2DF" Grid.Column="1" Name="BackGroundForBrain">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="0.7*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Foreground="White" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="11">
+                            人脑频率
+                        </Label>
+                        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 -25 0 0">
+                            <Image Source="\Material\BrainICO.png" Height="38" Width="38" Stretch="Fill"  RenderOptions.BitmapScalingMode ="HighQuality">
+                            </Image>
+
+                        </StackPanel>
+                        <Label Name="BrainGhz" Foreground="White" Grid.Row="2" FontSize="11" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 0 0 0">
+                            0Ghz
+                        </Label>
+                    </Grid>
+                </Grid>
+
+                <Grid Background="#FF9E0C61" Grid.Column="2">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="0.7*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Foreground="White" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="11">
+                            处理器频率
+                        </Label>
+                        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 -25 0 0">
+                            <Image Source="\Material\CPUICO.png" Height="27" Width="27" Stretch="Fill"  RenderOptions.BitmapScalingMode ="HighQuality">
+                            </Image>
+
+                        </StackPanel>
+                        <Label Name="CpuGhz" Foreground="White" Grid.Row="2" FontSize="11" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 0 0 0">
+                            0Ghz
+                        </Label>
+                    </Grid>
+                </Grid>
+
+                <Grid Background="#FFDF2E8E" Grid.Column="3">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="0.7*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Foreground="White" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="11">
+                            精神状态
+                        </Label>
+                        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 -25 0 0">
+                            <Image Source="\Material\SoulICO.png" Height="30" Width="30" Stretch="Fill"  RenderOptions.BitmapScalingMode ="HighQuality">
+                            </Image>
+                        </StackPanel>
+                        <Label Foreground="White" Grid.Row="2" FontSize="11" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 0 0 0" Name="SoulState">
+                            蓄势待发
+                        </Label>
+                    </Grid>
+                </Grid>
+
+                <Grid Background="#FF6F12C5" Grid.Column="4">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="0.7*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Foreground="White" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="11">
+                            键盘峰值
+                        </Label>
+                        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 -25 0 0">
+                            <Image Source="\Material\KeyBoardICO.png" Height="25" Width="25" Stretch="Fill"  RenderOptions.BitmapScalingMode ="HighQuality">
+                            </Image>
+                        </StackPanel>
+                        <Label Foreground="White" Grid.Row="2" FontSize="11" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 0 0 0" Name="KeyCount">
+                            0|Minute
+                        </Label>
+                    </Grid>
+                </Grid>
+
+
+                <Grid  Grid.Column="5">
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <StackPanel Orientation="Horizontal" IsHitTestVisible="True">
+                            <Label Foreground="White" FontWeight="Bold" FontSize="17" Margin="5 0 0 0" Name="DayInFo">
+
+                            </Label>
+                            <Label Foreground="White" FontWeight="Bold" FontSize="17" Margin="5 0 0 0" Name="Time">
+
+                            </Label>
+                        </StackPanel>
+                       
+                        <StackPanel Orientation="Horizontal">
+
+                            <Label Foreground="White"  FontSize="11" Margin="5 0 0 0" Name="AutoWeather">
+
+                            </Label>
+
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+
+                <Border  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="6" CornerRadius="0 0 7 7" Background="#FF015DA3">
+                    <TextBox HorizontalContentAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Foreground="White" Name="OneWord" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="13" Margin="5 0 0 0" AcceptsReturn="True" IsReadOnly="True" TextWrapping="Wrap">
+                        
+                    </TextBox>
+                </Border>
+
+            </Grid>
+        </Grid>
+    </Border>
+</Window>
