@@ -1,0 +1,95 @@
+=================================================
+Copyright (c) 2026
+YD525 (https://github.com/YD525)
+=================================================
+
+Exceptions:
+The following components are NOT covered by this license and are subject to their
+own respective licenses:
+
+- AvalonEdit
+License https://github.com/icsharpcode/AvalonEdit?tab=MIT-1-ov-file
+
+- Newtonsoft.Json
+License https://github.com/JamesNK/Newtonsoft.Json/blob/master/LICENSE.md
+
+- System.Data.SQLite
+License https://system.data.sqlite.org/home/doc/trunk/www/copyright.wiki
+
+- miniz
+License https://github.com/richgel999/miniz?tab=MIT-1-ov-file
+
+- PexInterface
+License https://github.com/YD525/PexInterface?tab=License-1-ov-file
+
+- PexReader
+Note: Original author (YD525) is exempt under the Author Exception (Section 2).
+License https://github.com/YD525/PexReader?tab=LGPL-3.0-2-ov-file
+
+- EspReader
+Note: Original author (YD525) is exempt under the Author Exception (Section 2).
+License https://github.com/YD525/EspReader?tab=GPL-3.0-2-ov-file
+
+- PhoenixEngine (CC BY-NC-ND 4.0)
+License https://github.com/YD525/PhoenixEngine?tab=License-1-ov-file
+
+------------------------------------------------------------
+1. License Overview
+------------------------------------------------------------
+This software is dual-licensed under the terms described below.
+
+- The original author and copyright holder
+  (YD525) is granted special author exceptions
+  as described in Section 2.
+
+- All other individuals or entities ("Third Parties") are
+  licensed under the GNU General Public License v3.0
+  (GPL-3.0), as described in Section 3.
+
+------------------------------------------------------------
+2. Author Exception (Original Author Only)
+------------------------------------------------------------
+YD525, as the original author and copyright holder, is granted
+unrestricted rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or commercialize this software,
+with or without attribution, under any license of choice.
+
+This exception applies only to the original author and does
+not extend to Third Parties.
+
+------------------------------------------------------------
+3. GNU General Public License v3.0 (Third Parties)
+------------------------------------------------------------
+All individuals or entities other than YD525 ("Third Parties")
+may use, copy, modify, and redistribute this software strictly
+in accordance with the terms of the GNU General Public License
+v3.0 (GPL-3.0).
+
+A copy of the GPL-3.0 license must be included with any
+distribution of this software.
+
+------------------------------------------------------------
+4. Attribution & No Misrepresentation
+------------------------------------------------------------
+Third Parties must retain appropriate copyright notices and
+attribution to the original author:
+
+- YD525
+
+Third Parties may not claim authorship of this software, nor
+imply endorsement, maintenance, or responsibility by YD525,
+except as permitted under the GPL-3.0 or with explicit prior
+written permission.
+
+------------------------------------------------------------
+5. License Precedence & Interpretation
+------------------------------------------------------------
+For Third Parties, the terms of the GNU GPL-3.0 shall govern
+all use, modification, and redistribution of this software.
+
+For the original author (YD525), the Author Exception in
+Section 2 shall govern.
+
+In the event of any conflict or ambiguity, this document
+shall take precedence regarding the intent of dual licensing.
+=================================================
